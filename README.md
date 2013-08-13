@@ -5,7 +5,7 @@ A small library for creating `clojure.core.async` process pipelines.
 _Inspired by [Messaging as a Programming Model](http://eventuallyconsistent.net/2013/08/12/messaging-as-a-programming-model-part-1/)._
 
 ```clj
-(require '[clojure.core.async :as async]
+(require '[clojure.core.async :as async :refer [>! <!]]
          '[async-pipeline :refer [pipeline go-try]]
          '[clojure.core.match :refer [match]])
 
