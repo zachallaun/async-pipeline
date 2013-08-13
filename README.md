@@ -6,8 +6,7 @@ _Inspired by [Messaging as a Programming Model](http://eventuallyconsistent.net/
 
 ```clj
 (require '[clojure.core.async :as async :refer [>! <!]]
-         '[async-pipeline :refer [pipeline go-try]]
-         '[clojure.core.match :refer [match]])
+         '[async-pipeline :refer [pipeline go-try]])
 
 (defn filter-valid-credentials
   [in out]
